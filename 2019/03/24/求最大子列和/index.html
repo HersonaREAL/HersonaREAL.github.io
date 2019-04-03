@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-CN">
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon3.ico?v=7.0.1">
 
 
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
@@ -72,7 +72,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Muse',
     version: '7.0.1',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
@@ -98,6 +98,21 @@
 
 
 
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background:   #7B68EE; 
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #ff009e, 0 0 5px  #7B68EE;
+    }
+    .pace .pace-activity {
+        border-top-color:   #7B68EE;    
+        border-left-color:  #7B68EE;    
+    }
+</style>
   <meta name="description" content="最大子列和问题问题描述： 给定K个整数组成的序列{ N​1, N2, …, NK}，“连续子列”被定义为{ N​i, Ni+1, …, Nj}，其中 1≤i≤j≤K。“最大子列和”则被定义为所有连续子列元素的和中最大者。例如给定序列{ -2, 11, -4, 13, -5, -2 }，其连续子列{ 11, -4, 13 }有最大的和20。现要求你编写程序，计算给定整数序列的最大子列和。  本题旨在">
 <meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
@@ -111,7 +126,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/03/24/求最大子列和/算法三结果.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/03/24/求最大子列和/分而治之.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/03/24/求最大子列和/算法四结果.jpg">
-<meta property="og:updated_time" content="2019-03-29T09:57:17.372Z">
+<meta property="og:updated_time" content="2019-04-03T16:13:08.012Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最大子列和问题">
 <meta name="twitter:description" content="最大子列和问题问题描述： 给定K个整数组成的序列{ N​1, N2, …, NK}，“连续子列”被定义为{ N​i, Ni+1, …, Nj}，其中 1≤i≤j≤K。“最大子列和”则被定义为所有连续子列元素的和中最大者。例如给定序列{ -2, 11, -4, 13, -5, -2 }，其连续子列{ 11, -4, 13 }有最大的和20。现要求你编写程序，计算给定整数序列的最大子列和。  本题旨在">
@@ -301,6 +316,9 @@
   
 
   
+    
+
+  
 
   
     <div class="site-search">
@@ -341,9 +359,6 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-            
-
           
           <div id="content" class="content">
             
@@ -425,7 +440,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-29 17:57:17" itemprop="dateModified" datetime="2019-03-29T17:57:17+08:00">2019-03-29</time>
+                <time title="修改时间：2019-04-04 00:13:08" itemprop="dateModified" datetime="2019-04-04T00:13:08+08:00">2019-04-04</time>
               
             
           </span>
@@ -470,6 +485,34 @@
 
 
           
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字字字数：</span>
+                
+                <span title="字字字数">3.7k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">耗时时时 &asymp;</span>
+                
+                <span title="耗时时时">7 分钟</span>
+              
+            </div>
+          
 
           
 
@@ -505,21 +548,21 @@
 <h2 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">20</span><br></pre></td></tr></table></figure>
 <hr>
 <hr>
-<h1 id="算法们："><a href="#算法们：" class="headerlink" title="算法们："></a>算法们：</h1><h2 id="暴力算法O-N-3-："><a href="#暴力算法O-N-3-：" class="headerlink" title="暴力算法O(N^3)："></a>暴力算法O(N^3)：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">int add1(int a[],int k) &#123;</span><br><span class="line">	int max=0;</span><br><span class="line">	int temp=0;</span><br><span class="line">	for (int i = 0; i &lt; k; i++) \\从第一个元素开始历遍</span><br><span class="line">		for (int j = i; j &lt; k; j++)&#123; \\求和的最后一个元素</span><br><span class="line">			temp = 0;</span><br><span class="line">			for(int n=i;n&lt;=j;n++)\\把前面两个for确定的头尾元素夹着的子列和，加起来</span><br><span class="line">			temp += a[n];</span><br><span class="line">			if (temp &gt; max)</span><br><span class="line">				max = temp;</span><br><span class="line">		&#125;</span><br><span class="line">    return max;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h1 id="算法们："><a href="#算法们：" class="headerlink" title="算法们："></a>算法们：</h1><h2 id="暴力算法O-N-3-："><a href="#暴力算法O-N-3-：" class="headerlink" title="暴力算法O(N^3)："></a>暴力算法O(N^3)：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">add1</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> max=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> temp=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; k; i++) \\从第一个元素开始历遍</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; k; j++)&#123; \\求和的最后一个元素</span><br><span class="line">			temp = <span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> n=i;n&lt;=j;n++)\\把前面两个<span class="keyword">for</span>确定的头尾元素夹着的子列和，加起来</span><br><span class="line">			temp += a[n];</span><br><span class="line">			<span class="keyword">if</span> (temp &gt; max)</span><br><span class="line">				max = temp;</span><br><span class="line">		&#125;</span><br><span class="line">    <span class="keyword">return</span> max;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>这种算法的想法是最朴素，最容易的想到的。容易想到有容易想到的坏处，坏处是它的复杂度居然有O(N^3)那么大，太可怕了吧- -。</p>
 </blockquote>
 <p><strong>这是我在PTA平台作业中提交时测的数据</strong><br><img src="/2019/03/24/求最大子列和/算法一结果.png" alt="算法测试结果"></p>
 <p>还是蛮吓人的，毕竟我等这个结果也等了挺久的-。-<br>测试样例到五位数的时候直接超时了，实际上也不知道等到猴年马月，有兴趣的同学可以用C的tick测一下。</p>
 <hr>
-<h2 id="稍微优化一下的算法O（N-2）："><a href="#稍微优化一下的算法O（N-2）：" class="headerlink" title="稍微优化一下的算法O（N^2）："></a>稍微优化一下的算法O（N^2）：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">int add2(int a[],int k) &#123;</span><br><span class="line">	int max = 0;</span><br><span class="line">	int temp = 0;</span><br><span class="line">	for (int i = 0; i &lt; k; i++)\\从第一个元素开始历遍</span><br><span class="line">	&#123;</span><br><span class="line">		temp = 0;</span><br><span class="line">		for (int j = i; j &lt; k; j++)在原来的基础上往后加一个元素</span><br><span class="line">		&#123;</span><br><span class="line">			temp += a[j];</span><br><span class="line">			if (temp &gt; max)\\加一个比较一次</span><br><span class="line">				max = temp;</span><br><span class="line">		&#125;</span><br><span class="line">    return max;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="稍微优化一下的算法O（N-2）："><a href="#稍微优化一下的算法O（N-2）：" class="headerlink" title="稍微优化一下的算法O（N^2）："></a>稍微优化一下的算法O（N^2）：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">add2</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; k; i++)\\从第一个元素开始历遍</span><br><span class="line">	&#123;</span><br><span class="line">		temp = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; k; j++)在原来的基础上往后加一个元素</span><br><span class="line">		&#123;</span><br><span class="line">			temp += a[j];</span><br><span class="line">			<span class="keyword">if</span> (temp &gt; max)\\加一个比较一次</span><br><span class="line">				max = temp;</span><br><span class="line">		&#125;</span><br><span class="line">    <span class="keyword">return</span> max;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>这种算法复杂度降了一个层次，实际上也不难想得到，比前面的算法稍微聪明点，少了许多重复的过程，重新利用了前面算好的数据</p>
 </blockquote>
 <p><strong>测试结果</strong><br><img src="/2019/03/24/求最大子列和/算法二结果.png" alt="算法二测试结果"></p>
 <p>跟算法一对比，前两个数量级的测试实例相差不大，第三个开始耗时就相差一个数量级了。这第二个算法至少能把后面两个数量级的测试实例算出来，不过这耗时嘛，有点惨不忍睹。通常一个好的程序猿看到O（N^2）,自然会想到能不能把这个算法优化成O（NlogN）,这个算法呢，也就是我接下来介绍的算法。</p>
 <hr>
-<h2 id="另外一种思想的算法（分而治之）（O-NlogN-）"><a href="#另外一种思想的算法（分而治之）（O-NlogN-）" class="headerlink" title="另外一种思想的算法（分而治之）（O(NlogN)）:"></a>另外一种思想的算法（分而治之）（O(NlogN)）:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">int Max(int left, int right, int middle) &#123; //比较左边 右边 跨越中间的和 三者那个最大</span><br><span class="line">	if (left &gt; right)</span><br><span class="line">		if (right &gt; middle)          //弱智的写法（是我本人了）</span><br><span class="line">			return left;</span><br><span class="line">		else if (middle &lt; left)</span><br><span class="line">			return left;</span><br><span class="line">		else</span><br><span class="line">			return middle;</span><br><span class="line">	else</span><br><span class="line">		if (left &gt; middle)</span><br><span class="line">			return right;</span><br><span class="line">		else if (middle &lt; right)</span><br><span class="line">			return right;</span><br><span class="line">		else</span><br><span class="line">			return middle;</span><br><span class="line">	//return A &gt; B ? A &gt; C ? A : C : B &gt; C ? B : C;  简便的写法</span><br><span class="line">&#125;</span><br><span class="line">int div(int a[],int left,int right) &#123; //分的算法，递归而治</span><br><span class="line">	int leftsum, rightsum, middlesum; //左边 右边 跨越中间的和 最大子列和</span><br><span class="line">	int maxleft = 0, maxright = 0;  //计算中间时左右的最大值</span><br><span class="line">	int templeft=0, tempright=0; //计算中间最大值的临时值</span><br><span class="line">	int middle; //中间的数</span><br><span class="line">	if (left == right)  //递归中止条件</span><br><span class="line">		if (a[left] &gt; 0)</span><br><span class="line">			return a[left];</span><br><span class="line">		else</span><br><span class="line">			return 0;</span><br><span class="line">	middle = (left + right)/2; //算出中间的数列</span><br><span class="line">	leftsum = div(a, left, middle);  //左边递归求解</span><br><span class="line">	rightsum = div(a, middle + 1, right); //右边递归求解</span><br><span class="line">	for (int i = middle; i &gt;= left; i--) &#123;  //中间的左边部分最大和</span><br><span class="line">		templeft += a[i];</span><br><span class="line">		if (templeft &gt; maxleft)</span><br><span class="line">			maxleft = templeft;</span><br><span class="line">	&#125;</span><br><span class="line">	for (int i = middle + 1; i &lt;=right; i++) &#123; //中间的右边部分最大和</span><br><span class="line">		tempright += a[i];</span><br><span class="line">		if (tempright &gt; maxright)</span><br><span class="line">			maxright = tempright;</span><br><span class="line">	&#125;</span><br><span class="line">	middlesum = maxleft + maxright; //中间最大和</span><br><span class="line"></span><br><span class="line">	return Max(leftsum,rightsum,middlesum);</span><br><span class="line">&#125;</span><br><span class="line">int add4(int a[], int k) &#123;</span><br><span class="line"></span><br><span class="line">	return div(a, 0, k - 1); //保持接口一致</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="另外一种思想的算法（分而治之）（O-NlogN-）"><a href="#另外一种思想的算法（分而治之）（O-NlogN-）" class="headerlink" title="另外一种思想的算法（分而治之）（O(NlogN)）:"></a>另外一种思想的算法（分而治之）（O(NlogN)）:</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Max</span><span class="params">(<span class="keyword">int</span> left, <span class="keyword">int</span> right, <span class="keyword">int</span> middle)</span> </span>&#123; <span class="comment">//比较左边 右边 跨越中间的和 三者那个最大</span></span><br><span class="line">	<span class="keyword">if</span> (left &gt; right)</span><br><span class="line">		<span class="keyword">if</span> (right &gt; middle)          <span class="comment">//弱智的写法（是我本人了）</span></span><br><span class="line">			<span class="keyword">return</span> left;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (middle &lt; left)</span><br><span class="line">			<span class="keyword">return</span> left;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> middle;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">if</span> (left &gt; middle)</span><br><span class="line">			<span class="keyword">return</span> right;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (middle &lt; right)</span><br><span class="line">			<span class="keyword">return</span> right;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> middle;</span><br><span class="line">	<span class="comment">//return A &gt; B ? A &gt; C ? A : C : B &gt; C ? B : C;  简便的写法</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">div</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> left,<span class="keyword">int</span> right)</span> </span>&#123; <span class="comment">//分的算法，递归而治</span></span><br><span class="line">	<span class="keyword">int</span> leftsum, rightsum, middlesum; <span class="comment">//左边 右边 跨越中间的和 最大子列和</span></span><br><span class="line">	<span class="keyword">int</span> maxleft = <span class="number">0</span>, maxright = <span class="number">0</span>;  <span class="comment">//计算中间时左右的最大值</span></span><br><span class="line">	<span class="keyword">int</span> templeft=<span class="number">0</span>, tempright=<span class="number">0</span>; <span class="comment">//计算中间最大值的临时值</span></span><br><span class="line">	<span class="keyword">int</span> middle; <span class="comment">//中间的数</span></span><br><span class="line">	<span class="keyword">if</span> (left == right)  <span class="comment">//递归中止条件</span></span><br><span class="line">		<span class="keyword">if</span> (a[left] &gt; <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> a[left];</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	middle = (left + right)/<span class="number">2</span>; <span class="comment">//算出中间的数列</span></span><br><span class="line">	leftsum = div(a, left, middle);  <span class="comment">//左边递归求解</span></span><br><span class="line">	rightsum = div(a, middle + <span class="number">1</span>, right); <span class="comment">//右边递归求解</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = middle; i &gt;= left; i--) &#123;  <span class="comment">//中间的左边部分最大和</span></span><br><span class="line">		templeft += a[i];</span><br><span class="line">		<span class="keyword">if</span> (templeft &gt; maxleft)</span><br><span class="line">			maxleft = templeft;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = middle + <span class="number">1</span>; i &lt;=right; i++) &#123; <span class="comment">//中间的右边部分最大和</span></span><br><span class="line">		tempright += a[i];</span><br><span class="line">		<span class="keyword">if</span> (tempright &gt; maxright)</span><br><span class="line">			maxright = tempright;</span><br><span class="line">	&#125;</span><br><span class="line">	middlesum = maxleft + maxright; <span class="comment">//中间最大和</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> Max(leftsum,rightsum,middlesum);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">add4</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> div(a, <span class="number">0</span>, k - <span class="number">1</span>); <span class="comment">//保持接口一致</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>测试结果</strong></p>
 <blockquote>
 <p>这个算法理解起来不是很难，思想也比较简单，就是代码有点长，要用到递归，这需要对递归思想有一定理解才可以用，可以看到跟第二个算法相比最后一个测试数据有了质的提升！</p>
@@ -528,7 +571,7 @@
 <p>  有数列 <code>4 -3 5 -2 -1 2 6 -2</code>，我们先从一分为二（递归）得到<code>4 -3 5 -2</code>(左边)，再一分为二（递归）得到<code>4 -3</code>,继续一分为二得到<code>4</code>和<code>-3</code>，然后<code>4</code>返回4，<code>-3</code>返回0，<code>4 -3</code>跨越中间得最大子列和为1，于是比较 4 0 1，<code>4 -3</code>返回得到4 ，同理<code>5 -2</code>返回得到5，在<code>4 -3 5 -2</code>中，往左右边扫描求出中间最大子列和6，再与4 5 比较，<code>4 -3 5 -2</code>就返回得到<strong>6</strong>，右边得<code>-1 2 6 -2</code>同理返回得到<strong>8</strong>,然后数列<code>4 -3 5 -2 -1 2 6 -2</code>从中间往左右扫，得到跨越中间得最大子列和为<strong>11</strong>，与<strong>6，8</strong>比较，整个数列最后返回11。</p>
 <p>  复杂度得计算如上图所示</p>
 <hr>
-<h2 id="算是最优解的算法（在线处理法）（O（N））："><a href="#算是最优解的算法（在线处理法）（O（N））：" class="headerlink" title="算是最优解的算法（在线处理法）（O（N））："></a>算是最优解的算法（在线处理法）（O（N））：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">int add3(int a[],int k) &#123;</span><br><span class="line">	int max = 0, temp=0;</span><br><span class="line">	for (int i=0; i &lt; k; i++) &#123;</span><br><span class="line">		temp += a[i];</span><br><span class="line">		if (temp &gt; max)</span><br><span class="line">			max = temp;</span><br><span class="line">		else if (temp &lt; 0)//小于0的子列 全部抛弃</span><br><span class="line">			temp = 0;</span><br><span class="line">	&#125;</span><br><span class="line">	return max;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="算是最优解的算法（在线处理法）（O（N））："><a href="#算是最优解的算法（在线处理法）（O（N））：" class="headerlink" title="算是最优解的算法（在线处理法）（O（N））："></a>算是最优解的算法（在线处理法）（O（N））：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">add3</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> max = <span class="number">0</span>, temp=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i &lt; k; i++) &#123;</span><br><span class="line">		temp += a[i];</span><br><span class="line">		<span class="keyword">if</span> (temp &gt; max)</span><br><span class="line">			max = temp;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (temp &lt; <span class="number">0</span>)<span class="comment">//小于0的子列 全部抛弃</span></span><br><span class="line">			temp = <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> max;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>算法写起来时挺简单的吼，要想象它的正确性还是挺难的。从测试图可以看到其实提升还是有的，可能要列出第五个测试数据才能比较出与第三个算法的差别。</p>
 </blockquote>
@@ -557,14 +600,14 @@
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
   <div>用爱发电~</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
+    <span>⚡充电</span>
   </button>
   <div id="QR" style="display: none;">
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/uploads/wechatpay.jpg" alt="Hersona 微信支付">
-        <p>微信支付</p>
+        <img id="wechat_qr" src="/uploads/wechatpay.jpg" alt="Hersona 微信">
+        <p>微信</p>
       </div>
     
 
@@ -640,6 +683,8 @@
         
           
   
+
+
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
       <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
@@ -761,6 +806,9 @@
         </div>
       </div>
 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=501673&auto=0&height=66"></iframe>
+
+
       
       <!--noindex-->
         <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
@@ -787,6 +835,10 @@
   
 
 
+
+
+
+
         
       </div>
     </main>
@@ -800,10 +852,25 @@
   <span class="author" itemprop="copyrightHolder">Hersona</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">4k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">8 分钟</span>
   
 </div>
 
+<!--
 
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
@@ -813,9 +880,9 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.0.1</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.0.1</div>
 
-
+-->
 
 
 
@@ -847,6 +914,7 @@
     
   </div>
 
+
   
 
 <script>
@@ -867,6 +935,12 @@
 
 
 
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -903,9 +977,7 @@
   
 
 
-  <script src="/js/src/affix.js?v=7.0.1"></script>
-
-  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+  <script src="/js/src/schemes/muse.js?v=7.0.1"></script>
 
 
 
@@ -1281,6 +1353,99 @@
   
 
   
+<style>
+  .copy-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+    
+    user-select: none;
+    outline: 0;
+  }
+
+  .highlight-wrap .copy-btn {
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    padding: 2px 6px;
+    position: absolute;
+    
+      right: 4px;
+      top: 8px;
+    
+  }
+
+  .highlight-wrap:hover .copy-btn,
+  .highlight-wrap .copy-btn:focus {
+    opacity: 1;
+  }
+
+  .highlight-wrap {
+    position: relative;
+  }
+</style>
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('拷贝').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('拷贝');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
+
+
+<!--
+
+<script type="text/javascript"
+color="220,220,220" opacity='0.8' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+-->
+
+<div class="bg_content">
+  <canvas id="canvas"></canvas>
+</div>
+
+
+<script type="text/javascript" src="/js/src/dynamic_bg.js"></script>
+
+<script type="text/javascript" src="/js/click_show_text.js"></script>
 
 </body>
 </html>

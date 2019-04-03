@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-CN">
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon3.ico?v=7.0.1">
 
 
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
@@ -72,7 +72,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Muse',
     version: '7.0.1',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
@@ -98,6 +98,21 @@
 
 
 
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background:   #7B68EE; 
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #ff009e, 0 0 5px  #7B68EE;
+    }
+    .pace .pace-activity {
+        border-top-color:   #7B68EE;    
+        border-left-color:  #7B68EE;    
+    }
+</style>
   <meta name="description" content="在路上的沙雕程序猿">
 <meta property="og:type" content="website">
 <meta property="og:title" content="分类来的">
@@ -294,6 +309,28 @@
   
 
   
+    
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
+  
 
   
     <div class="site-search">
@@ -334,28 +371,6 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-            
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
@@ -432,6 +447,8 @@
         
           
   
+
+
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
       <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
@@ -544,6 +561,9 @@
         </div>
       </div>
 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=501673&auto=0&height=66"></iframe>
+
+
       
 
       
@@ -551,6 +571,10 @@
     </div>
   </aside>
   
+
+
+
+
 
 
         
@@ -566,10 +590,25 @@
   <span class="author" itemprop="copyrightHolder">Hersona</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">4k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">8 分钟</span>
   
 </div>
 
+<!--
 
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
@@ -579,9 +618,9 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.0.1</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.0.1</div>
 
-
+-->
 
 
 
@@ -613,6 +652,7 @@
     
   </div>
 
+
   
 
 <script>
@@ -633,6 +673,12 @@
 
 
 
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -669,9 +715,7 @@
   
 
 
-  <script src="/js/src/affix.js?v=7.0.1"></script>
-
-  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+  <script src="/js/src/schemes/muse.js?v=7.0.1"></script>
 
 
 
@@ -1047,6 +1091,99 @@
   
 
   
+<style>
+  .copy-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+    
+    user-select: none;
+    outline: 0;
+  }
+
+  .highlight-wrap .copy-btn {
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    padding: 2px 6px;
+    position: absolute;
+    
+      right: 4px;
+      top: 8px;
+    
+  }
+
+  .highlight-wrap:hover .copy-btn,
+  .highlight-wrap .copy-btn:focus {
+    opacity: 1;
+  }
+
+  .highlight-wrap {
+    position: relative;
+  }
+</style>
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('拷贝').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('拷贝');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
+
+
+<!--
+
+<script type="text/javascript"
+color="220,220,220" opacity='0.8' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+-->
+
+<div class="bg_content">
+  <canvas id="canvas"></canvas>
+</div>
+
+
+<script type="text/javascript" src="/js/src/dynamic_bg.js"></script>
+
+<script type="text/javascript" src="/js/click_show_text.js"></script>
 
 </body>
 </html>
