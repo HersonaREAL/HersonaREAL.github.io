@@ -2017,7 +2017,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #77e27e;
+  background: #2ee9ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2792,4 +2792,27 @@ element.style {
   -ms-transform: translateY(0px);
   -o-transform: translateY(0px);
   transform: translateY(0px);
+}
+.brand {
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+  color: #fff;
+  background: rgba(123,104,238,0.741);
+  border-bottom: none;
+}
+.btn {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 14px;
+  color: rgba(136,118,241,0.878);
+  background: rgba(255,255,255,0);
+  border: 2px solid rgba(138,119,252,0.631);
+  text-decoration: none;
+  border-radius: 0;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  line-height: 2;
 }
