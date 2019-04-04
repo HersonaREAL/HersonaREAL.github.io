@@ -2017,7 +2017,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2ee9ff;
+  background: #73ff37;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2773,7 +2773,7 @@ embed {
   margin-bottom: 40px;
   padding: 25px;
   background: rgba(255,255,255,0.9);
-  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -webkit-box-shadow: 0 0 14px rgba(177,165,253,0.278);
   -moz-box-shadow: 0 0 14px #cacbcc;
 }
 .use-motion .post-block,
@@ -2798,16 +2798,16 @@ element.style {
   display: inline-block;
   padding: 0 40px;
   color: #fff;
-  background: rgba(123,104,238,0.741);
+  background: #b1a5fd;
   border-bottom: none;
 }
 .btn {
   display: inline-block;
   padding: 0 20px;
   font-size: 14px;
-  color: rgba(136,118,241,0.878);
+  color: #b1a5fd;
   background: rgba(255,255,255,0);
-  border: 2px solid rgba(138,119,252,0.631);
+  border: 2px solid #b1a5fd;
   text-decoration: none;
   border-radius: 0;
   transition-property: background-color;
@@ -2815,4 +2815,59 @@ element.style {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   line-height: 2;
+}
+.btn:hover {
+  border-color: #b1a5fd;
+  background: #b1a5fd;
+  color: #fff;
+}
+#rewardButton span {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-size: 18px;
+  background: #b1a5fd;
+}
+.post-body p a {
+  color: #777;
+  border-bottom: none;
+  border-bottom: 1px solid #777;
+}
+.post-body p a:hover {
+  color: #b1a5fd;
+  border-bottom: 1px solid #b1a5fd;
+}
+.link-blue {
+  color: #777;
+}
+.link-blue:hover {
+  color: #b1a5fd;
+}
+.menu .menu-item a,
+.menu .menu-item span.exturl {
+  display: block;
+  font-size: 13px;
+  line-height: inherit;
+  border-bottom: 1px solid transparent;
+  transition-property: border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.menu .menu-item a:hover,
+.menu .menu-item span.exturl:hover {
+  color: #b1a5fd;
+}
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 1em 2em;
+  border-left: 3px solid #b1a5fd;
+  background-color: #f9f9f9;
+  list-style: none;
 }

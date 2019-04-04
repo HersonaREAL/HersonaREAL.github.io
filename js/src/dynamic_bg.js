@@ -5,7 +5,7 @@ var cw = canvas.width = window.innerWidth,
 var ch = canvas.height = window.innerHeight,
   cy = ch / 2;
 
-ctx.fillStyle = "#000";
+ctx.fillStyle = "#999";
 var linesNum = 16;
 var linesRy = [];
 var requestId = null;
@@ -29,7 +29,7 @@ function Line(flag) {
   this.vb = randomIntFromInterval(25, 100) / 100;
 
   this.draw = function() {
-    ctx.strokeStyle = "#ccc";
+    ctx.strokeStyle = "#8a7be626";
     ctx.beginPath();
     ctx.moveTo(this.a.x, this.a.y);
     ctx.lineTo(this.b.x, this.b.y);
@@ -140,6 +140,7 @@ function Intersect2lines(l1, l2) {
 function markPoint(p) {
   ctx.beginPath();
   ctx.arc(p.x, p.y, 2, 0, 2 * Math.PI);
+  ctx.fillStyle="#9aa8b4";
   ctx.fill();
 }
 
