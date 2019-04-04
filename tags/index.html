@@ -1151,8 +1151,8 @@
       ta.readOnly = false;
       var result = document.execCommand('copy');
       
-        if (result) $(this).text('复制成功');
-        else $(this).text('复制失败');
+        if (result) $(this).text('已拷贝');
+        else $(this).text('拷贝失败');
       
       ta.blur(); // For iOS
       $(this).blur();
@@ -1182,6 +1182,8 @@ color="220,220,220" opacity='0.8' zIndex="-2" count="200" src="//cdn.bootcss.com
 <script type="text/javascript" src="/js/src/dynamic_bg.js"></script>
 
 <script type="text/javascript" src="/js/click_show_text.js"></script>
+
+
 
 </body>
 </html>

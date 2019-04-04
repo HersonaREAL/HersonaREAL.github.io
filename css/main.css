@@ -2017,7 +2017,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff24ff;
+  background: #9effff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2769,8 +2769,8 @@ embed {
   height: 100%;
 }
 .post {
-  margin-top: 1px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 40px;
   padding: 25px;
   background: #fff;
   -webkit-box-shadow: 0 0 14px #cacbcb;
@@ -2779,9 +2779,18 @@ embed {
 .use-motion .post-block,
 .use-motion .pagination,
 .use-motion .comments {
+  background: write;
   opacity: 0;
-  background: #fff;
 }
 .posts-expand {
   padding-top: 40px;
+}
+element.style {
+  opacity: 1;
+  display: block;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
 }
