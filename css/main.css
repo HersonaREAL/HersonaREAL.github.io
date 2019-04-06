@@ -2017,7 +2017,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ba73b4;
+  background: #14ff6e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2833,6 +2833,9 @@ element.style {
   font-stretch: normal;
   font-size: 18px;
   background: #b1a5fd;
+}
+#rewardButton span:hover {
+  background: rgba(138,226,216,0.729);
 }
 .post-body p a {
   color: #777;
