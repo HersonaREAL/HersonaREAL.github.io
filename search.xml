@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[线性表]]></title>
+    <url>%2F%E7%BA%BF%E6%80%A7%E8%A1%A8.html</url>
+    <content type="text"><![CDATA[未开始]]></content>
+      <categories>
+        <category>学习</category>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[关于数据结构的学习]]></title>
     <url>%2F%E5%85%B3%E4%BA%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%AD%A6%E4%B9%A0.html</url>
     <content type="text"><![CDATA[学习用的慕课 数据结构（浙江大学） 学习用书 算法（第四版） 数据结构与算法分析]]></content>
