@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[测试一下]]></title>
+    <url>%2F%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[线性表]]></title>
     <url>%2Fliner-tag.html</url>
     <content type="text"><![CDATA[未开始]]></content>
