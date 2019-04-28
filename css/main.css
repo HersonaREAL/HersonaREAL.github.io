@@ -2017,7 +2017,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a4a4be;
+  background: #14ac7f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2820,6 +2820,7 @@ element.style {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   line-height: 2;
+  border-radius: 5px;
 }
 .btn:hover {
   border-color: #b1a5fd;
