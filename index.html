@@ -393,7 +393,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ccblogs.top/测试一下.html">
+    <link itemprop="mainEntityOfPage" href="http://ccblogs.top/zuidazilie.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hersona">
@@ -413,7 +413,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/测试一下.html" class="post-title-link" itemprop="url">测试一下</a>
+                <a href="/zuidazilie.html" class="post-title-link" itemprop="url">最大子列和问题</a>
               
             
           </h1>
@@ -438,12 +438,53 @@
                 
               
 
-              <time title="创建时间：2019-04-11 00:20:42" itemprop="dateCreated datePublished" datetime="2019-04-11T00:20:42+08:00">2019-04-11</time>
+              <time title="创建时间：2019-04-24 23:27:07" itemprop="dateCreated datePublished" datetime="2019-04-24T23:27:07+08:00">2019-04-24</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-28 15:03:17" itemprop="dateModified" datetime="2019-04-28T15:03:17+08:00">2019-04-28</time>
+              
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/" itemprop="url" rel="index"><span itemprop="name">学习</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/数据结构/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -457,8 +498,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/测试一下.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/测试一下.html" itemprop="commentCount"></span>
+                <a href="/zuidazilie.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/zuidazilie.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -466,7 +507,7 @@
 
           
           
-            <span id="/测试一下.html" class="leancloud_visitors" data-flag-title="测试一下">
+            <span id="/zuidazilie.html" class="leancloud_visitors" data-flag-title="最大子列和问题">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -493,7 +534,7 @@
                 
                   <span class="post-meta-item-text">字字字数：</span>
                 
-                <span title="字字字数">0</span>
+                <span title="字字字数">3.8k</span>
               
 
               
@@ -507,7 +548,7 @@
                 
                   <span class="post-meta-item-text">耗时时时 &asymp;</span>
                 
-                <span title="耗时时时">1 分钟</span>
+                <span title="耗时时时">8 分钟</span>
               
             </div>
           
@@ -528,15 +569,27 @@
 
       
         
-          
-            <p>
-              
-              
-            </p>
+          <h1 id="最大子列和问题"><a href="#最大子列和问题" class="headerlink" title="最大子列和问题"></a>最大子列和问题</h1><h2 id="问题描述�"><a href="#问题描述�" class="headerlink" title="问题描述�?"></a>问题描述�?</h2><blockquote>
+<p>给定K个整数组成的序列{ N�?1, N2, …, NK}，“连续子列”被定义为{ N​i, Ni+1, …, Nj}，其�? 1≤i≤j≤K。“最大子列和”则被定义为所有连续子列元素的和中最大者。例如给定序列{ -2, 11, -4, 13, -5, -2 }，其连续子列{ 11, -4, 13 }有最大的�?20。现要求你编写程序，计算给定整数序列的最大子列和�?</p>
+</blockquote>
+<p>本题旨在测试各种不同的算法在各种数据情况下的表现。各组测试数据特点如下：</p>
+<blockquote>
+<ul>
+<li>数据1：与样例等价，测试基本正确性；</li>
+<li>数据2�?102个随机整数；</li>
+<li>数据3�?103个随机整数；</li>
+<li>数据4�?104个随机整数；</li>
+<li>数据5�?105个随机整数；</li>
+</ul>
+</blockquote>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h2><p>输入�?1行给出正整数K (�?100000)；第2行给出K个整数，其间以空格分隔�?</p>
+<h2 id="输出格式�"><a href="#输出格式�" class="headerlink" title="输出格式�?"></a>输出格式�?</h2><p>在一行中输出最大子列和。如果序列中所有整数皆为负数，则输�?0�?</p>
+<h2 id="输入样例�"><a href="#输入样例�" class="headerlink" title="输入样例�?"></a>输入样例�?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6</span><br><span class="line">-2 11 -4 13 -5 -2</span><br></pre></td></tr></table></figure>
+<h2 id="输出样例�"><a href="#输出样例�" class="headerlink" title="输出样例�?"></a>输出样例�?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">20</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/测试一下.html#more" rel="contents">
+              <a class="btn" href="/zuidazilie.html#more" rel="contents">
                 二维展开！ &raquo;
               </a>
             </div>
@@ -646,12 +699,24 @@
                 
               
 
-              <time title="创建时间：2019-04-10 01:10:46 / 修改时间：01:12:22" itemprop="dateCreated datePublished" datetime="2019-04-10T01:10:46+08:00">2019-04-10</time>
+              <time title="创建时间：2019-04-10 01:10:46" itemprop="dateCreated datePublished" datetime="2019-04-10T01:10:46+08:00">2019-04-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-28 15:02:12" itemprop="dateModified" datetime="2019-04-28T15:02:12+08:00">2019-04-28</time>
               
             
           </span>
@@ -730,7 +795,7 @@
                 
                   <span class="post-meta-item-text">字字字数：</span>
                 
-                <span title="字字字数">3</span>
+                <span title="字字字数">2.6k</span>
               
 
               
@@ -744,7 +809,7 @@
                 
                   <span class="post-meta-item-text">耗时时时 &asymp;</span>
                 
-                <span title="耗时时时">1 分钟</span>
+                <span title="耗时时时">5 分钟</span>
               
             </div>
           
@@ -767,8 +832,30 @@
         
           
             <p>
-              未开始
-              
+              #前言线性表属于线性结构中逻辑结构中的线性结构。逻辑结构分为线性结构，几何结构，树形结构和图形结构四大结构。而线性表就属于线性结构。
+
+注意：本文使用C语言🉑
+
+#线性表
+##概念线性表:由零个或者多个数据元素组成的有序数列。线性表又包括：顺序存储和链式存储其中链式存储的地址不是连续的，它们是通过指针相连的。
+##基本操作1.建立空表2.定值查找3.定位查找4.指定位置插入5.指定位置删除6.输入线性表7.输出线性表
+
+#顺序存储简单地说就是数组，寻找一块初始内存空间，然后在这块地址下的连续空间依次存放数据。通常又分为动态分配和静态分配，静态分配主要用栈，动态分配主要用堆(记得防内存泄露)
+
+注意这块空间地址是连续滴☺
+
+顺序存储结构体定义typedef struct LNode *list;typedef int position;const int MAX = 10;struct LNode &#123;    int data[MAX];    position Last;&#125;;
+
+
+
+该结构定义需要注意三点:
+
+线性表的最大长度MAX
+线性表的当前长度Last
+线性表的起始内存位置
+
+顺序存储初始化list MakeEmpty()&#123;    list L;    L = (list)malloc(sizeof(struct LNode));//为结构体申请
+              ...
             </p>
           <!--noindex-->
           
@@ -1069,267 +1156,6 @@
 
 
     
-      
-
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ccblogs.top/zuidazilie.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hersona">
-      <meta itemprop="description" content="在路上的沙雕程序猿">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="呀">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/zuidazilie.html" class="post-title-link" itemprop="url">最大子列和问题</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-24 23:27:07" itemprop="dateCreated datePublished" datetime="2019-03-24T23:27:07+08:00">2019-03-24</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-21 01:41:58" itemprop="dateModified" datetime="2019-04-21T01:41:58+08:00">2019-04-21</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/" itemprop="url" rel="index"><span itemprop="name">学习</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/数据结构/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/zuidazilie.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/zuidazilie.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/zuidazilie.html" class="leancloud_visitors" data-flag-title="最大子列和问题">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字字字数：</span>
-                
-                <span title="字字字数">3.7k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">耗时时时 &asymp;</span>
-                
-                <span title="耗时时时">7 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="最大子列和问题"><a href="#最大子列和问题" class="headerlink" title="最大子列和问题"></a>最大子列和问题</h1><h2 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h2><blockquote>
-<p>给定K个整数组成的序列{ N​1, N2, …, NK}，“连续子列”被定义为{ N​i, Ni+1, …, Nj}，其中 1≤i≤j≤K。“最大子列和”则被定义为所有连续子列元素的和中最大者。例如给定序列{ -2, 11, -4, 13, -5, -2 }，其连续子列{ 11, -4, 13 }有最大的和20。现要求你编写程序，计算给定整数序列的最大子列和。</p>
-</blockquote>
-<p>本题旨在测试各种不同的算法在各种数据情况下的表现。各组测试数据特点如下：</p>
-<blockquote>
-<ul>
-<li>数据1：与样例等价，测试基本正确性；</li>
-<li>数据2：102个随机整数；</li>
-<li>数据3：103个随机整数；</li>
-<li>数据4：104个随机整数；</li>
-<li>数据5：105个随机整数；</li>
-</ul>
-</blockquote>
-<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h2><p>输入第1行给出正整数K (≤100000)；第2行给出K个整数，其间以空格分隔。</p>
-<h2 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h2><p>在一行中输出最大子列和。如果序列中所有整数皆为负数，则输出0。</p>
-<h2 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6</span><br><span class="line">-2 11 -4 13 -5 -2</span><br></pre></td></tr></table></figure>
-<h2 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">20</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/zuidazilie.html#more" rel="contents">
-                二维展开！ &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-   <footer class="post-footer">
-
-   
-     <div>    
-      
-  </div>
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1376,7 +1202,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1511,7 +1337,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">4k</span>
+    <span title="站点总字数">6k</span>
   
 
   
@@ -1520,7 +1346,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">8 分钟</span>
+    <span title="站点阅读时长">13 分钟</span>
   
 </div>
 
