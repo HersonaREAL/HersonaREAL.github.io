@@ -1,0 +1,62 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: CCBlog
+theme: ["PaperMod"]
+
+params:
+  env: production
+  homeInfoParams:
+    Title: Hi there 👋
+    Content: Welcome to CCBlog ;-)
+  socialIcons: # optional
+    - name: "github"
+      url: "https://github.com/HersonaREAL"
+      # 添加搜索参数，参考 https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    includeMatches: true
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideFooter: false # 隐藏页脚
+  ShowWordCounts: true
+  VisitCount: true
+  ShowLastMod: true #显示文章更新时间
+  ShowToc: true # 显示目录
+  TocOpen: true # 自动展开目录
+
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: search/
+      weight: 40
+    - identifier: aboutMe
+      name: About Me
+      url: /about/
+      weight: 50
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
