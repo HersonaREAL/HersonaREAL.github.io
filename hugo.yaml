@@ -23,7 +23,6 @@ params:
     keys: ["title", "permalink", "summary", "content"]
   displayFullLangName: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   hideFooter: false # 隐藏页脚
   ShowWordCounts: true
