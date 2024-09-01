@@ -30,6 +30,11 @@ params:
   ShowLastMod: true #显示文章更新时间
   ShowToc: true # 显示目录
   TocOpen: true # 自动展开目录
+  label:
+    icon: "/images/logo.webp"
+    iconHeight: 35
+  assets: 
+    favicon: "/images/logo.webp" # 标签页图标
 
 
 menu:
